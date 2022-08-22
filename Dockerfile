@@ -19,3 +19,5 @@ RUN apt-get update && apt-get install -y \
     
 COPY php.ini /usr/local/etc/php/
 COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+WORKDIR /src
